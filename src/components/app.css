@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+}
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  background-position-y: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  align-items: center;
+}
+.image-container:hover .overlay {
+  opacity: 1;
+}
+.image-container img {
+  width: 200px;
+}
+.show-btn {
+  background-color: white;
+  outline: none;
+  border: none;
+  position: absolute;
+  opacity: 0.5;
+  padding: 5px;
+}
+.show-btn:hover {
+  opacity: 1;
+}
+
+/* show movie  */
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.show-movie-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.show-movie-container {
+  gap: 0.7rem;
+}
+
+.show-movie-img {
+  width: 95%;
+}
+.show-movie-info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+.show-movie-info p {
+  font-size: 20px;
+  color: gray;
+}
+
+.watch-now-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 50px;
+  width: 60%;
+}
+.watch-later-btn {
+  background-color: yellow;
+  color: black;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 60%;
+}
+.watch-now-btn:hover {
+  background-color: rgb(84, 23, 23);
+}
+.watch-later-btn:hover {
+  background-color: darkgoldenrod;
+}
