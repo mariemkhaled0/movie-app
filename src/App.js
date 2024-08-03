@@ -12,7 +12,7 @@ import RemoveFave from "./components/RemoveFave";
 import ShowMovie from "./components/ShowMovie";
 function App() {
   const [movies, setMovies] = useState([]);
-  const [searchVal, setSearchVal] = useState("stars");
+  const [searchVal, setSearchVal] = useState("");
   const [favArray, setfavArray] = useState([]);
   const [showMovieDetails, setShow] = useState();
 
